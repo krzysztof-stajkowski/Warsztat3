@@ -28,9 +28,9 @@ public class Main {
 //        pl.coderslab.UserDao.UserDao.update(userToUpdate);
 
 ///////////////  FIND ALL
-        User[] all = pl.coderslab.UserDao.UserDao.findAll();
-        for (User u : all) {
-            System.out.println(u);
-        }
+//        User[] all = pl.coderslab.UserDao.UserDao.findAll();
+//        for (User u : all) {
+//            System.out.println(u);
+//        }
     }
 }
