@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  <!-- DODANE Z LMS-->
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>< !-- DODANE Z LMS-->
 
+
+<html lang="en">
 <head>
 
     <meta charset="utf-8">
@@ -12,7 +15,9 @@
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<c:url value="/theme/css/sb-admin-2.css"/>" rel="stylesheet"> <!-- PODMIENIONE Z LMS-->
+
+
     <link
             href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
             rel="stylesheet">
@@ -136,11 +141,7 @@
 
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
+                <%@include file="/footer.jsp" %>
             </footer>
             <!-- End of Footer -->
 
