@@ -29,7 +29,7 @@
                             <td>${user.email}</td>
                             <td>
                                 <a href='<c:url value="/user/delete?id=${user.id}"/>'>Usuń</a>
-                                <a href='<c:url value="/user/edit?id=${user.id}"/>'>Edytuj</a>
+                                <a href='<c:url value="/user/edit?id=${user.id}"/>'>Edit</a>
                                 <a href='<c:url value="/user/show?id=${user.id}"/>'>Pokaż</a>
                             </td>
                         </tr>

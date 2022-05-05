@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!-- DODANE Z LMS-->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-< !-- DODANE Z LMS-->
-
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -17,15 +13,11 @@
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="<c:url value="/theme/css/sb-admin-2.css"/>" rel="stylesheet"> <!-- PODMIENIONE Z LMS-->
-
-
-    <link
-            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-            rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<c:url value="/theme/css/sb-admin-2.css"/>" rel="stylesheet">
 
 </head>
 
@@ -38,11 +30,10 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/web/user/list">
             <div class="sidebar-brand-icon rotate-n-15">
                 <i class="fas fa-laugh-wink"></i>
             </div>
-
             <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
         </a>
 
@@ -51,13 +42,10 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="/web/user/list">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider">
 
         <!-- Sidebar Toggler (Sidebar) -->
         <div class="text-center d-none d-md-inline">
@@ -76,30 +64,25 @@
             <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+                <!-- Sidebar Toggle (Topbar) -->
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+
+
 
                 <!-- Topbar Navbar -->
+                <ul class="navbar-nav ml-auto">
 
-
-                <!-- Nav Item - Alerts -->
-
-
-                <!-- Nav Item - Messages -->
-
-
-                <!-- Nav Item - User Information -->
-
-
-                </ul>
+                    <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                    <li class="nav-item dropdown no-arrow d-sm-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
 
 
             </nav>
             <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
-
-        </div>
-    </div>
-    </div>
-
-</body>
-</html>
+            <div class="container-fluid"></div>
